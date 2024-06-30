@@ -1,0 +1,62 @@
+#pragma once
+#include <SFML/Graphics.hpp>
+#include "TextureHolder.h"
+
+using namespace sf;
+
+class Engine
+{
+private:
+	//Texture holder
+	TextureHolder th;
+
+	const int TILE_SIZE = 50;
+	const int VERTS_IN_QUAD = 4;
+	const int GRAVITY = 300; //force pushing characters down
+
+	//regular Render Window
+	RenderWindow m_Window;
+
+	//The main views
+	View m_MainView;
+	View m_LeftView;
+	View m_RightView;
+
+	//Three Views for tbe background
+	View m_BGMainView;
+	View m_BGLeftView;
+	View m_BGRightView;
+
+	View m_HudView;
+
+	//Declare a sprite and texture for background
+	Sprite m_BackgroundSprite;
+	Texture m_BackgroundTexture;
+
+	//Is the game currently playing?
+	bool m_Playing = false;
+
+	//Is character 1 or 2 in focus?
+	bool m_Character1 = true;
+
+	//Start in full screen (not split) mode
+	bool m_SplitScreen = false;
+
+	//Time left in current level in seconds
+	float m_TimeRemaining = 10;
+	Time m_GameTimeTotal;
+
+	//Is it time for a new/first level?
+	bool m_NewLevelRequired = true;
+
+	//Private functions for internal use only
+	void input();
+	void update(float dtAsSeconds);
+	void draw();
+
+public:
+	Engine();
+
+	//Run calls all the private functions
+	void run();
+};
