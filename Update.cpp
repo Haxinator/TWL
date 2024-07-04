@@ -6,8 +6,20 @@ using namespace sf;
 
 void Engine::update(float dtAsSeconds)
 {
+	if (m_NewLevelRequired)
+	{
+		//load a level
+		loadLevel();
+	}
+
 	if (m_Playing)
 	{
+		//update Thomas
+		m_Thomas.update(dtAsSeconds);
+
+		//Update Bob
+		m_Bob.update(dtAsSeconds);
+
 		//Count down the time the player has left
 		m_TimeRemaining -= dtAsSeconds;
 
@@ -17,4 +29,23 @@ void Engine::update(float dtAsSeconds)
 			m_NewLevelRequired = true;
 		}
 	} // end if playing
+
+	//Set the appropriate view around the appropriate character
+	if (m_SplitScreen)
+	{
+		m_LeftView.setCenter(m_Thomas.getCenter());
+		m_RightView.setCenter(m_Bob.getCenter());
+	}
+	else
+	{
+		//center full screen around appropriate character
+		if (m_Character1)
+		{
+			m_MainView.setCenter(m_Thomas.getCenter());
+		}
+		else
+		{
+			m_MainView.setCenter(m_Bob.getCenter());
+		}
+	}
 }

@@ -13,6 +13,15 @@ void Engine::draw()
 		m_Window.draw(m_BackgroundSprite);
 		//Switch to m_MainView
 		m_Window.setView(m_MainView);
+
+		//Draw the level
+		m_Window.draw(m_VALevel, &m_TextureTiles);
+
+		//Draw Thomas
+		m_Window.draw(m_Thomas.getSprite());
+
+		//Draw Bob
+		m_Window.draw(m_Bob.getSprite());
 	}
 	else
 	{
@@ -27,6 +36,15 @@ void Engine::draw()
 		//switch to left view
 		m_Window.setView(m_LeftView);
 
+		//Draw the level
+		m_Window.draw(m_VALevel, &m_TextureTiles);
+
+		//draw bob
+		m_Window.draw(m_Bob.getSprite());
+
+		//draw Thomas
+		m_Window.draw(m_Thomas.getSprite());
+
 		//now draw bob's screen
 
 		//switch to background view
@@ -35,6 +53,15 @@ void Engine::draw()
 		m_Window.draw(m_BackgroundSprite);
 		//Switch to m_rightview
 		m_Window.setView(m_RightView);
+
+		//draw the level
+		m_Window.draw(m_VALevel, &m_TextureTiles);
+
+		//draw Thomas
+		m_Window.draw(m_Thomas.getSprite());
+
+		//draw bob
+		m_Window.draw(m_Bob.getSprite());
 	}
 
 	//Draw the HUD

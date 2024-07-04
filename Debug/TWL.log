@@ -1,5 +1,4 @@
-﻿  Draw.cpp
-  Engine.cpp
+﻿  Engine.cpp
 C:\VS Projects\TWL\Engine.cpp(7,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
           with
           [
@@ -20,9 +19,4 @@ C:\VS Projects\TWL\Engine.cpp(10,38): warning C4244: 'argument': conversion from
           [
               T=float
           ]
-  Input.cpp
-  TextureHolder.cpp
-  main.cpp
-  Update.cpp
-  Generating Code...
   TWL.vcxproj -> C:\VS Projects\TWL\Debug\TWL.exe

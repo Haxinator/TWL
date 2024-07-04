@@ -1,6 +1,11 @@
+C:\VS Projects\TWL\Bob.cpp;C:\VS Projects\TWL\Debug\Bob.obj
 C:\VS Projects\TWL\Draw.cpp;C:\VS Projects\TWL\Debug\Draw.obj
 C:\VS Projects\TWL\Engine.cpp;C:\VS Projects\TWL\Debug\Engine.obj
 C:\VS Projects\TWL\Input.cpp;C:\VS Projects\TWL\Debug\Input.obj
+C:\VS Projects\TWL\LevelManager.cpp;C:\VS Projects\TWL\Debug\LevelManager.obj
+C:\VS Projects\TWL\LoadLevel.cpp;C:\VS Projects\TWL\Debug\LoadLevel.obj
+C:\VS Projects\TWL\PlayableCharacter.cpp;C:\VS Projects\TWL\Debug\PlayableCharacter.obj
 C:\VS Projects\TWL\TextureHolder.cpp;C:\VS Projects\TWL\Debug\TextureHolder.obj
 C:\VS Projects\TWL\main.cpp;C:\VS Projects\TWL\Debug\main.obj
+C:\VS Projects\TWL\Thomas.cpp;C:\VS Projects\TWL\Debug\Thomas.obj
 C:\VS Projects\TWL\Update.cpp;C:\VS Projects\TWL\Debug\Update.obj
