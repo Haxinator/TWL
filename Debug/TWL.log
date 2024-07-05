@@ -1,22 +1,4 @@
-﻿  Engine.cpp
-C:\VS Projects\TWL\Engine.cpp(7,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\VS Projects\TWL\Engine.cpp(8,44): warning C4244: '=': conversion from 'unsigned int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\VS Projects\TWL\Engine.cpp(10,52): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\VS Projects\TWL\Engine.cpp(10,38): warning C4244: 'argument': conversion from 'T' to 'unsigned int', possible loss of data
-          with
-          [
-              T=float
-          ]
+﻿  LoadLevel.cpp
+C:\VS Projects\TWL\LoadLevel.cpp(23,42): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
+C:\VS Projects\TWL\LoadLevel.cpp(24,39): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
   TWL.vcxproj -> C:\VS Projects\TWL\Debug\TWL.exe
